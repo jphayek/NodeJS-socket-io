@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Diffusion</title>
+</head>
+<style>
+    tr{
+        border: 1px solid black;
+    }
+    td{
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <h1> Hello JP</h1>
+
+    <div id="mytab1"></div>
+
+
+
+
+    <script>
+        AColorPicker.from('mytab1');
+        for (var a=0; a < 100; a++) {
+            document.write("<table>");
+                document.write("<lable>");
+            for(var b=0; b<100; b++) {
+                document.write("<td>" + (a*b) + "</td>");
+        }
+        document.write("</lable>");
+        document.write("</table>");
+        }
+        
+
+    </script>
+</body>
+</html>
